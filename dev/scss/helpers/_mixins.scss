@@ -2,13 +2,11 @@
 /* =============
     Mixins
 ============= */
+@use "sass:math";
 /* ---------------- Font Sizing ---------------- */
 // ----
 // rem mixins
 // ----
-
-@use "sass:math";
-
 $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://sass-compatibility.github.io/#list_separator_function)
 @function rem-separator($list) {
     @if function-exists("list-separator")==true {
@@ -21,10 +19,9 @@ $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://s
     @return if($test-list==$list, space, comma);
 }
 @mixin rem-base($zoom: 100%) {
-    // font-size: $zoom / 16px * $rem-base;
+    //font-size: $zoom / 16px * $rem-base;
 
-    font-size: math.div($zoom, 16px) * $rem-base;
-    
+    font-size: math.div($zoom, 16px) *  $rem-base;
 }
 @function rem-convert($to, $values...) {
     $result: ();
@@ -32,13 +29,11 @@ $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://s
     @each $value in $values {
         @if type-of($value)== "number" and unit($value)=="rem" and $to=="px" {
             // $result: append($result, $value / 1rem * $rem-base, $separator);
-
-            $result: append($result, math.div($value, 1rem) * $rem-base, $separator);
+            $result: append($result, math.div($value, 1rem )* $rem-base, $separator);
         } @else
         if type-of($value)=="number" and unit($value)=="px" and $to=="rem" {
             // $result: append($result, $value / ($rem-base / 1rem), $separator);
-
-            $result: append($result, math.div($value, (math.div($rem-base, 1rem))), $separator);
+            $result: append($result, math.div($value, math.div($rem-base, 1rem)), $separator);
         } @else
         if type-of($value)=="list" {
             $result: append($result, rem-convert($to, $value...), $separator);
@@ -81,9 +76,8 @@ $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://s
 // If you require to comma separate your list
 // rem-calc((16px, 32px, 48), 8px);
 @function convert-to-rem($value, $base-value: $rem-base) {
-   // $value: strip-unit($value) / strip-unit($base-value) * 1rem;
-    $value: strip-unit math.div(($value), strip-unit($base-value)) * 1rem;
-    
+    // $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+    $value: math.div(strip-unit($value), strip-unit($base-value)) * 1rem;
     @if ($value==0rem) {
         $value: 0;
     }
@@ -94,7 +88,6 @@ $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://s
     $max: length($values);
     @if $max==1 {
         @return convert-to-rem(nth($values, 1), $base-value);
-
     }
     $remValues: ();
     @for $i from 1 through $max {

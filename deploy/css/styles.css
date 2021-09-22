@@ -394,7 +394,8 @@ p {
 }
 
 h1 {
-  font-size: strip-unit 4.375rem;
+  font-size: 6.25rem;
+  color: red;
 }
 
 /* =============
