@@ -454,8 +454,8 @@ header > div aside a {
 ============= */
 #hero {
   height: 90vh;
-  width: 100%;
   overflow: hidden;
+  width: 100%;
 }
 @media (min-width: 1440px) {
   #hero {
@@ -465,12 +465,12 @@ header > div aside a {
   }
 }
 #hero > div {
-  background-image: url("../img/hero/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  display: flex;
   align-items: center;
+  background-image: url("../img/hero/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 100%;
   justify-content: center;
 }
 @media (min-width: 1440px) {
@@ -520,20 +520,20 @@ header > div aside a {
 
 #content {
   display: grid;
-  grid-template-columns: auto 90% auto;
   grid-template-areas: ". content .";
+  grid-template-columns: auto 90% auto;
   padding: 64px 0;
 }
 @media (min-width: 768px) {
   #content {
-    padding: 100px 0;
     grid-template-columns: auto 80% auto;
+    padding: 100px 0;
   }
 }
 @media (min-width: 1024px) {
   #content {
-    padding: 128px 0;
     grid-template-columns: auto 80% auto;
+    padding: 128px 0;
   }
 }
 @media (min-width: 1440px) {

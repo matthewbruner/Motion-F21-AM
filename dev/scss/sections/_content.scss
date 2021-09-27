@@ -1,34 +1,36 @@
-#content{
+#content {
     display: grid;
-    grid-template-columns: auto 90% auto;
     grid-template-areas: ". content .";
+    grid-template-columns: auto 90% auto;
     padding: 64px 0;
 
-    @include md{
+    @include md {
+        grid-template-columns: auto 80% auto;
         padding: 100px 0;
-        grid-template-columns: auto 80% auto;
     }
 
-    @include lg{
+    @include lg {
+        grid-template-columns: auto 80% auto;
         padding: 128px 0;
-        grid-template-columns: auto 80% auto;
     }
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1440px auto;
     }
-    >div{
+
+    >div {
         grid-area: content;
 
-        @include lg{
+        @include lg {
             padding: 0 30%;
         }
-        h1{
+
+        h1 {
             font-size: rem-calc(35);
             margin-bottom: 10px;
         }
 
-        p{
+        p {
             font-size: rem-calc(18);
             line-height: rem-calc(30);
             text-align: justify;
