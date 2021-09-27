@@ -383,19 +383,16 @@ ul li {
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4 {
+body {
+  font-family: "Roboto", sans-serif;
+}
+body h1, body h2, body h3, body h4 {
   margin: 0;
   padding: 0;
 }
-
-p {
+body p {
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  font-size: 6.25rem;
-  color: red;
 }
 
 /* =============
