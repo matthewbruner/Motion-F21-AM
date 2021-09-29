@@ -439,6 +439,7 @@ header {
   width: 100%;
   background-color: #fff;
   filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
+  z-index: 1000;
 }
 header > div {
   display: grid;
@@ -454,7 +455,6 @@ header > div aside a {
 ============= */
 #hero {
   height: 90vh;
-  overflow: hidden;
   width: 100%;
 }
 @media (min-width: 1440px) {
@@ -465,6 +465,16 @@ header > div aside a {
   }
 }
 #hero > div {
+  overflow: hidden !important;
+  border: 1px solid red;
+  height: 100%;
+}
+@media (min-width: 1440px) {
+  #hero > div {
+    grid-area: hero;
+  }
+}
+#hero > div article {
   align-items: center;
   background-image: url("../img/hero/hero.jpg");
   background-position: center;
@@ -473,32 +483,27 @@ header > div aside a {
   height: 100%;
   justify-content: center;
 }
-@media (min-width: 1440px) {
-  #hero > div {
-    grid-area: hero;
-  }
-}
-#hero > div section {
+#hero > div article section {
   color: #fff;
   text-align: center;
 }
-#hero > div section h1 {
+#hero > div article section h1 {
   font-size: 5rem;
   font-weight: 900;
   line-height: 117px;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
-  #hero > div section h1 {
+  #hero > div article section h1 {
     font-size: 5.625rem;
   }
 }
 @media (min-width: 1024px) {
-  #hero > div section h1 {
+  #hero > div article section h1 {
     font-size: 6.25rem;
   }
 }
-#hero > div section h2 {
+#hero > div article section h2 {
   font-size: 1.875rem;
   font-weight: 400;
   line-height: 47px;
@@ -506,13 +511,13 @@ header > div aside a {
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
 }
 @media (min-width: 768px) {
-  #hero > div section h2 {
+  #hero > div article section h2 {
     font-size: 2.5rem;
     margin-top: -20px;
   }
 }
 @media (min-width: 1024px) {
-  #hero > div section h2 {
+  #hero > div article section h2 {
     font-size: 3.125rem;
     margin-top: -15px;
   }
