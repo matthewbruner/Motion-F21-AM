@@ -1,0 +1,64 @@
+#hero{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    color: $white;
+    @include xl{
+        display: grid;
+        grid-template-areas: "hero hero hero";
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div{
+        background-image: url("../img/hero/hero.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include xl{
+        grid-area: hero;
+        }
+
+        section{
+            
+            text-align:center;
+
+            h1{
+                font-size: rem-calc(200);
+                font-weight: 900;
+                line-height: 300px;
+                color: $white;
+                
+
+                @include md {
+                    font-size: rem-calc(200);
+                }
+
+                @include lg {
+                    font-size: rem-calc(200);
+                }
+            }
+            h2{
+                font-size: rem-calc(60);
+                font-weight: 400;
+                line-height: 70px;
+                margin-top: -25px;
+                color: $white;
+                
+
+                @include md {
+                    font-size: rem-calc(60);
+                    margin-top: -20px;
+                }
+
+                @include lg {
+                    font-size: rem-calc(60);
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+}

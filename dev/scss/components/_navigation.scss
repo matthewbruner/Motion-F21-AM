@@ -1,3 +1,30 @@
 /* =============
     Navigation
 ============= */
+nav{
+    height: 100%;
+
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        
+        li{
+            margin-left: 4vw;
+            padding-right: 50;
+            
+            a:link, a:visited{
+                font-family: 'Roboto', sans-serif;
+                font-size: rem-calc(24);
+                color: white;
+                font-weight: 400;
+                transition: 0.25s;
+
+                &:hover, &:active{
+                        color: rgb(163, 163, 163)
+                }
+            }
+        }
+    }
+}
