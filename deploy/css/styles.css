@@ -416,10 +416,10 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
   height: 100%;
+  padding-right: 50px;
 }
 nav ul li {
   margin-left: 4vw;
-  padding-right: 50;
 }
 nav ul li a:link, nav ul li a:visited {
   font-family: "Roboto", sans-serif;
@@ -485,9 +485,8 @@ header > div aside a {
   text-align: center;
 }
 #hero > div section h1 {
-  font-size: 12.5rem;
+  font-size: 25rem;
   font-weight: 900;
-  line-height: 300px;
   color: #fff;
 }
 @media (min-width: 768px) {
