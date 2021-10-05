@@ -1,8 +1,10 @@
 #content{
     display: grid;
-    grid-template-columns: auto 90% auto;
+    grid-template-columns: auto 80% auto;
     grid-template-areas: ". content ." ;
-    padding: 64px 0;
+    padding: 10px 0;
+    background-image: url("../img/content/content.jpg");
+
 
     @include md{
         padding: 100px 0;
@@ -15,6 +17,7 @@
     }
 
     >div{
+        
         grid-area: content;
 
         @include lg{
@@ -26,9 +29,13 @@
         }
 
         p{
-            font-size: rem-calc(18);
-            line-height: rem-calc(30);
-            text-align: justify;
+            font-size: rem-calc(30);
+            line-height: rem-calc(50);
+            text-align: center;
+            color: $white;
+            background-color: $blue-macaw;
+            padding: 50px;
+            filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
         }
     }
 }
