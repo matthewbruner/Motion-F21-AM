@@ -7,10 +7,17 @@ gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline();
 
-mainTL.to("#Macaw1",{duration:1, alpha:0, scale:2})
+
+function macawanimation (){
+const tl = gsap.timeline();
+tl.to("#Group4_2", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group5_2", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group6_2", {duration: 0.1, autoAlpha: 0});
+return tl;
+}
 
 
-
+mainTL.add(macawanimation)
 
 
 

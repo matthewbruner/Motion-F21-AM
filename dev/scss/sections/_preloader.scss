@@ -8,6 +8,20 @@
     z-index: 5000;
     background-color: $white;
 
+    #Group4_2{
+        visibility: hidden;
+    }
+
+    #Group5_2{
+        visibility: hidden;
+    }
+
+    #Group6_2{
+        visibility: hidden;
+    }
+
+
+
     @include md{
         grid-template-columns: auto 80vw auto;
     }

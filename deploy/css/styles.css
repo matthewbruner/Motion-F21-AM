@@ -468,6 +468,15 @@ header > div aside a {
   z-index: 5000;
   background-color: #fff;
 }
+#preloader #Group4_2 {
+  visibility: hidden;
+}
+#preloader #Group5_2 {
+  visibility: hidden;
+}
+#preloader #Group6_2 {
+  visibility: hidden;
+}
 @media (min-width: 768px) {
   #preloader {
     grid-template-columns: auto 80vw auto;
