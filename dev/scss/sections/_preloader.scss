@@ -8,20 +8,70 @@
     z-index: 5000;
     background-color: $white;
 
-    #Group4_2{
+    #Group1A{
         visibility: hidden;
     }
 
-    #Group5_2{
+    #Group2A{
         visibility: hidden;
     }
 
-    #Group6_2{
+    #Group3A{
         visibility: hidden;
     }
 
+    #Group4A{
+        visibility: hidden;
+    }
 
+    #Group5A{
+        visibility: hidden;
+    }
 
+    #Group6A{
+        visibility: hidden;
+    }
+
+    #Group7A{
+        visibility: hidden;
+    }
+
+    #Group8A{
+        visibility: hidden;
+    }
+
+    #Group9A{
+        visibility: hidden;
+    }
+
+    #Group10A{
+        visibility: hidden;
+    }
+
+    #Group11A{
+        visibility: hidden;
+    }
+
+    #Group12A{
+        visibility: hidden;
+    }
+
+    #Group13A{
+        visibility: hidden;
+    }
+
+    #Group14A{
+        visibility: hidden;
+    }
+
+    #Group15A{
+        visibility: hidden;
+    }
+
+    #Group16A{
+        visibility: hidden;
+    }
+    
     @include md{
         grid-template-columns: auto 80vw auto;
     }

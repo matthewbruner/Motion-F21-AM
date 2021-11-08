@@ -468,13 +468,52 @@ header > div aside a {
   z-index: 5000;
   background-color: #fff;
 }
-#preloader #Group4_2 {
+#preloader #Group1A {
   visibility: hidden;
 }
-#preloader #Group5_2 {
+#preloader #Group2A {
   visibility: hidden;
 }
-#preloader #Group6_2 {
+#preloader #Group3A {
+  visibility: hidden;
+}
+#preloader #Group4A {
+  visibility: hidden;
+}
+#preloader #Group5A {
+  visibility: hidden;
+}
+#preloader #Group6A {
+  visibility: hidden;
+}
+#preloader #Group7A {
+  visibility: hidden;
+}
+#preloader #Group8A {
+  visibility: hidden;
+}
+#preloader #Group9A {
+  visibility: hidden;
+}
+#preloader #Group10A {
+  visibility: hidden;
+}
+#preloader #Group11A {
+  visibility: hidden;
+}
+#preloader #Group12A {
+  visibility: hidden;
+}
+#preloader #Group13A {
+  visibility: hidden;
+}
+#preloader #Group14A {
+  visibility: hidden;
+}
+#preloader #Group15A {
+  visibility: hidden;
+}
+#preloader #Group16A {
   visibility: hidden;
 }
 @media (min-width: 768px) {

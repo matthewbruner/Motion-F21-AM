@@ -10,9 +10,22 @@ const mainTL = gsap.timeline();
 
 function macawanimation (){
 const tl = gsap.timeline();
-tl.to("#Group4_2", {duration: 0.1, autoAlpha: 0});
-tl.to("#Group5_2", {duration: 0.1, autoAlpha: 0});
-tl.to("#Group6_2", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group1A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group2A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group3A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group4A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group5A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group6A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group7A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group8A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group9A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group10A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group11A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group12A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group13A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group14A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group15A", {duration: 0.1, autoAlpha: 0});
+tl.to("#Group16A", {duration: 0.1, autoAlpha: 0});
 return tl;
 }
 
