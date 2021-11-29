@@ -20,8 +20,8 @@ $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://s
 }
 @mixin rem-base($zoom: 100%) {
     //font-size: $zoom / 16px * $rem-base;
-
-    font-size: math.div($zoom, 16px) *  $rem-base;
+    //here
+    //font-size: math.div($zoom, 16px) *  $rem-base;
 }
 @function rem-convert($to, $values...) {
     $result: ();
@@ -75,15 +75,16 @@ $rem-base: 16px !default; // list-separator polyfill by Hugo Giraudel (https://s
 // rem-calc(16px 32px 48px, 8px);
 // If you require to comma separate your list
 // rem-calc((16px, 32px, 48), 8px);
-@function convert-to-rem($value, $base-value: $rem-base) {
-    // $value: strip-unit($value) / strip-unit($base-value) * 1rem;
-    $value: math.div(strip-unit($value), strip-unit($base-value)) * 1rem;
-    @if ($value==0rem) {
-        $value: 0;
-    }
-    // Turn 0em into 0
-    @return $value;
-}
+//here
+// @function convert-to-rem($value, $base-value: $rem-base) {
+//     // $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+//     $value: math.div(strip-unit($value), strip-unit($base-value)) * 1rem;
+//     @if ($value==0rem) {
+//         $value: 0;
+//     }
+//     // Turn 0em into 0
+//     @return $value;
+//}
 @function rem-calc($values, $base-value: $rem-base) {
     $max: length($values);
     @if $max==1 {
