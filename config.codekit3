@@ -40,12 +40,12 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/logo.kit" : {
+    "\/dev\/content\/goat-animation.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/logo.html",
+      "oAP" : "\/dev\/content\/goat-animation.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {

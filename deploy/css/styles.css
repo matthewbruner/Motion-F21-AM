@@ -361,6 +361,10 @@ ul li {
   list-style: none;
 }
 
+.hide {
+  display: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -404,3 +408,10 @@ textarea {
 /* =============
     Footer
 ============= */
+#goat-animation {
+  background-color: #FF6033;
+  display: grid;
+  justify-content: center;
+  padding-top: 325px;
+  padding-bottom: 400px;
+}
