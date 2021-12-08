@@ -1,9 +1,10 @@
 #logo{
     display: grid;
-    grid-template-columns: auto 90vw auto;
+    grid-template-columns: auto 100vw auto;
     grid-template-areas: ". logo .";
     height: 100vh;
     width: 100%;
+    
 
     @include md{
         grid-template-columns: auto 70vw auto;
@@ -21,10 +22,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
- 
+        height: 90%;
+        padding-bottom: 50px;
         svg{
 
         }
+
+.liveballs_class{
+    visibility: hidden;
+    padding-bottom: 50px;
+    justify-self: center;
+}
     }
 }
+
+.letters{
+    visibility: 100;
+    padding-bottom: 50px;
+    z-index: 5000;
+};
